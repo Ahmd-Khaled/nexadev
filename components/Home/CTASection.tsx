@@ -89,7 +89,7 @@ export default function CTASection() {
           {/* Bottom Stats */}
           <div className="mt-16 grid gap-8 border-t border-white/10 pt-10 sm:grid-cols-3">
             <div>
-              <h3 className="text-3xl font-bold text-purple-400">100+</h3>
+              <h3 className="text-3xl font-bold text-purple-400">120+</h3>
               <p className="mt-2 text-gray-400">{t("Projects Delivered")}</p>
             </div>
 
