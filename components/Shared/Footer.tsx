@@ -13,6 +13,8 @@ import {
   Globe,
   Rocket,
   ShieldCheck,
+  Phone,
+  PhoneCall,
 } from "lucide-react";
 
 export default function Footer() {
@@ -47,7 +49,7 @@ export default function Footer() {
             duration: 15,
             repeat: Infinity,
           }}
-          className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-purple-600/10 blur-3xl"
+          className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-cyan-600/10 blur-3xl"
         />
 
         <motion.div
@@ -59,12 +61,12 @@ export default function Footer() {
             duration: 18,
             repeat: Infinity,
           }}
-          className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-3xl"
+          className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-cyan-600/10 blur-3xl"
         />
       </div>
 
       {/* Top Gradient Line */}
-      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
 
       <div className="container relative z-10 mx-auto px-6">
         {/* Hero Footer */}
@@ -74,7 +76,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="py-20 text-center"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
             <Sparkles size={16} />
             {t("Building Digital Excellence")}
           </div>
@@ -133,11 +135,11 @@ export default function Footer() {
                   repeat: Infinity,
                 }}
               >
-                <Code2 className="h-8 w-8 text-blue-400" />
+                <Code2 className="h-8 w-8 text-cyan-400" />
               </motion.div>
 
               <span className="text-2xl font-bold">
-                Nexa<span className="text-blue-400">Dev</span>
+                Nexa<span className="text-cyan-400">Dev</span>
               </span>
             </Link>
 
@@ -155,7 +157,7 @@ export default function Footer() {
                       y: -4,
                     }}
                     href="#"
-                    className="rounded-2xl border border-white/10 bg-white/5 p-3 text-gray-400 transition hover:border-blue-500 hover:text-white"
+                    className="rounded-2xl border border-white/10 bg-white/5 p-3 text-gray-400 transition hover:border-cyan-500 hover:text-white"
                   >
                     <Icon size={18} />
                   </motion.a>
@@ -173,11 +175,11 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="group flex items-center gap-2 text-gray-400 transition hover:text-white"
+                    className="group flex items-center gap-2 text-gray-400 transition hover:text-cyan-400"
                   >
                     <ArrowUpRight
                       size={14}
-                      className="opacity-0 transition group-hover:opacity-100"
+                      className="opacity-0 transition group-hover:opacity-100 group-hover:text-cyan-400"
                     />
                     {link.name}
                   </Link>
@@ -192,7 +194,10 @@ export default function Footer() {
 
             <ul className="space-y-3 text-gray-400">
               {services.map((service) => (
-                <li key={service} className="transition hover:text-white">
+                <li
+                  key={service}
+                  className="transition hover:text-cyan-400 cursor-pointer"
+                >
                   {service}
                 </li>
               ))}
@@ -200,18 +205,42 @@ export default function Footer() {
           </div>
 
           {/* Contact Card */}
+          {/* Contact Card */}
           <div>
-            <div className="rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-6 backdrop-blur-xl">
-              <h3 className="font-semibold">
+            <div className="group relative overflow-hidden rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:border-cyan-400/40">
+              {/* Animated glow background */}
+              <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-cyan-500/20 blur-3xl animate-pulse" />
+              <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl animate-pulse" />
+
+              <h3 className="font-semibold text-white">
                 {t("Available For New Projects")}
               </h3>
 
               <p className="mt-4 text-gray-400">support@nexadev.com</p>
 
-              <p className="mt-2 text-gray-400">+20 100 000 0000</p>
+              {/* Phone row with animation */}
+              <div className="mt-3 flex items-center gap-3 text-white">
+                <div className="relative flex items-center justify-center">
+                  {/* Ripple effect */}
+                  <span className="absolute inline-flex h-8 w-8 animate-ping rounded-full bg-cyan-400/40" />
 
-              <div className="mt-6 inline-flex items-center gap-2 text-green-400">
-                <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+                  {/* Call icon */}
+                  <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-cyan-500 text-white shadow-lg animate-bounce group-hover:animate-none">
+                    <PhoneCall className="h-4 w-4" />
+                  </div>
+                </div>
+
+                <a
+                  href="tel:+201000000000"
+                  className="font-medium text-gray-200 transition-colors hover:text-cyan-400"
+                >
+                  +20 100 000 0000
+                </a>
+              </div>
+
+              {/* Availability status */}
+              <div className="mt-6 inline-flex items-center gap-2 text-cyan-400">
+                <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
                 {t("Available Now")}
               </div>
             </div>

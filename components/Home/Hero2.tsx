@@ -30,7 +30,7 @@ export default function Hero2() {
   ];
 
   return (
-    <section className="relative pt-8 overflow-hidden bg-black text-white">
+    <section className="relative pt-10 overflow-hidden bg-black text-white">
       {/* ================= BACKGROUND GLOW ================= */}
       <div className="absolute inset-0">
         <motion.div
@@ -62,7 +62,7 @@ export default function Hero2() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 backdrop-blur-xl"
           >
-            <Sparkles size={16} className="text-blue-400" />
+            <Sparkles size={16} className="text-cyan-400" />
             {t("Software Company")}
           </motion.div>
 
@@ -87,9 +87,7 @@ export default function Hero2() {
             transition={{ delay: 0.2 }}
             className="mt-6 max-w-xl text-lg text-gray-400"
           >
-            {t(
-              "We build web apps, mobile apps, CRM systems, dashboards and AI solutions that help businesses grow faster.",
-            )}
+            {t("homedesc")}
           </motion.p>
 
           {/* CTA */}
@@ -124,7 +122,7 @@ export default function Hero2() {
                 transition={{ delay: 0.4 + i * 0.1 }}
                 className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 backdrop-blur-xl"
               >
-                <s.icon size={16} className="text-blue-400" />
+                <s.icon size={16} className="text-cyan-400" />
                 {s.label}
               </motion.div>
             ))}

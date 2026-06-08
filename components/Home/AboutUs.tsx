@@ -65,7 +65,7 @@ export default function AboutUs() {
               transition={{ duration: 4, repeat: Infinity }}
               className="absolute -right-5 -top-5 rounded-2xl border border-white/10 bg-black/80 p-5 backdrop-blur-md"
             >
-              <Rocket className="text-purple-400" size={32} />
+              <Rocket className="text-cyan-400" size={32} />
             </motion.div>
 
             <motion.div
@@ -85,7 +85,7 @@ export default function AboutUs() {
             transition={{ duration: 0.8 }}
             className="text-start"
           >
-            <span className="inline-flex rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-sm text-purple-300">
+            <span className="inline-flex rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
               {t("About Us")}
             </span>
 
@@ -99,22 +99,22 @@ export default function AboutUs() {
 
             <div className="mt-8 space-y-4">
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="shrink-0 text-green-400" size={20} />
+                <CheckCircle2 className="shrink-0 text-cyan-400" size={20} />
                 <span>{t("Custom Web Applications")}</span>
               </div>
 
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="shrink-0 text-green-400" size={20} />
+                <CheckCircle2 className="shrink-0 text-cyan-400" size={20} />
                 <span>{t("Mobile App Development")}</span>
               </div>
 
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="shrink-0 text-green-400" size={20} />
+                <CheckCircle2 className="shrink-0 text-cyan-400" size={20} />
                 <span>{t("CRM & ERP Solutions")}</span>
               </div>
 
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="shrink-0 text-green-400" size={20} />
+                <CheckCircle2 className="shrink-0 text-cyan-400" size={20} />
                 <span>{t("UI/UX Design")}</span>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function AboutUs() {
                   }}
                   className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition hover:bg-white/10"
                 >
-                  <feature.icon className="mb-3 text-purple-400" size={28} />
+                  <feature.icon className="mb-3 text-cyan-400" size={28} />
 
                   <h3 className="font-semibold">{feature.title}</h3>
                 </motion.div>

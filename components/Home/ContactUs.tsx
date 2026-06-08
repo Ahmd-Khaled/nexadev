@@ -75,7 +75,7 @@ export default function ContactUs() {
             duration: 14,
             repeat: Infinity,
           }}
-          className="absolute -left-32 top-0 h-[500px] w-[500px] rounded-full bg-purple-600/10 blur-3xl"
+          className="absolute -left-32 top-0 h-[500px] w-[500px] rounded-full bg-cyan-600/10 blur-3xl"
         />
 
         <motion.div
@@ -87,7 +87,7 @@ export default function ContactUs() {
             duration: 18,
             repeat: Infinity,
           }}
-          className="absolute -right-32 bottom-0 h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-3xl"
+          className="absolute -right-32 bottom-0 h-[500px] w-[500px] rounded-full bg-cyan-600/10 blur-3xl"
         />
       </div>
 
@@ -99,7 +99,7 @@ export default function ContactUs() {
           viewport={{ once: true }}
           className="mx-auto max-w-3xl text-center"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
             <Sparkles size={16} />
             {t("Get In Touch")}
           </div>
@@ -114,7 +114,7 @@ export default function ContactUs() {
         </motion.div>
 
         {/* Contact Cards */}
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mt-16 grid gap-6 md:grid-cols-3 w-full md:w-[70%] mx-auto">
           {contactCards.map((item, index) => (
             <motion.div
               key={item.title}
@@ -128,7 +128,7 @@ export default function ContactUs() {
               }}
               className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl"
             >
-              <item.icon className="mb-4 text-blue-400" size={30} />
+              <item.icon className="mb-4 text-cyan-400" size={30} />
 
               <h3 className="text-lg font-semibold">{item.title}</h3>
 
@@ -147,7 +147,7 @@ export default function ContactUs() {
             className="rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-xl"
           >
             <div className="flex items-center gap-3">
-              <MessageSquare className="text-blue-400" size={30} />
+              <MessageSquare className="text-cyan-400" size={30} />
 
               <h3 className="text-2xl font-bold">{t("Why Work With Us")}</h3>
             </div>
@@ -168,10 +168,10 @@ export default function ContactUs() {
                     y: -5,
                     scale: 1.02,
                   }}
-                  className="group rounded-2xl border border-white/10 bg-white/5 p-5 transition-all hover:border-blue-500/30 hover:bg-white/10"
+                  className="group rounded-2xl border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan-500/30 hover:bg-white/10"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="rounded-xl bg-blue-500/10 p-3 text-blue-400 transition group-hover:bg-blue-500/20">
+                    <div className="rounded-xl bg-cyan-500/10 p-3 text-cyan-400 transition group-hover:bg-cyan-500/20">
                       <item.icon size={22} />
                     </div>
 
@@ -201,25 +201,25 @@ export default function ContactUs() {
               <input
                 type="text"
                 placeholder={t("Your Name")}
-                className="w-full rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-blue-500"
+                className="w-full rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-cyan-500"
               />
 
               <input
                 type="email"
                 placeholder={t("Your Email")}
-                className="w-full rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-blue-500"
+                className="w-full rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-cyan-500"
               />
 
               <input
                 type="text"
                 placeholder={t("Project Type")}
-                className="w-full rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-blue-500"
+                className="w-full rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-cyan-500"
               />
 
               <textarea
                 rows={5}
                 placeholder={t("Tell Us About Your Project")}
-                className="w-full resize-none rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-blue-500"
+                className="w-full resize-none rounded-2xl border border-white/10 bg-black/30 px-5 py-4 outline-none transition focus:border-cyan-500"
               />
 
               <motion.button
@@ -229,7 +229,7 @@ export default function ContactUs() {
                 whileTap={{
                   scale: 0.98,
                 }}
-                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 py-4 font-medium transition hover:bg-blue-700"
+                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-cyan-600 py-4 font-medium transition hover:bg-cyan-700"
               >
                 <Send size={18} />
                 {t("Send Message")}

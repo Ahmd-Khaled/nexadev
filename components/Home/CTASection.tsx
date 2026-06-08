@@ -24,7 +24,7 @@ export default function CTASection() {
             duration: 12,
             repeat: Infinity,
           }}
-          className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-purple-600/10 blur-3xl"
+          className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-cyan-600/10 blur-3xl"
         />
 
         <motion.div
@@ -49,7 +49,7 @@ export default function CTASection() {
           className="mx-auto max-w-5xl rounded-[40px] border border-white/10 bg-white/5 p-10 md:p-16 backdrop-blur-xl text-center"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-purple-500/20 bg-purple-500/10 px-4 py-2 text-sm text-purple-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
             <Rocket size={16} />
             {t("Ready To Start")}
           </div>
@@ -68,7 +68,7 @@ export default function CTASection() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="#contact-form"
-              className="group flex items-center gap-2 rounded-2xl bg-purple-600 px-8 py-4 font-medium transition-all duration-300 hover:bg-purple-700 hover:scale-105"
+              className="group flex items-center gap-2 rounded-2xl bg-cyan-600 px-8 py-4 font-medium transition-all duration-300 hover:bg-cyan-700 hover:scale-105"
             >
               {t("Contact Us")}
               <ArrowRight

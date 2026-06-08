@@ -20,28 +20,52 @@ export default function OurTeam() {
 
   const team = [
     {
+      name: t("Project Manager"),
+      role: t("Agile Delivery, Planning & Team Coordination"),
+      icon: Users,
+      img: "https://images.unsplash.com/photo-1552581234-26160f608093",
+    },
+    {
+      name: t("UI/UX Designer"),
+      role: t("User Experience & Interface Design Specialist"),
+      icon: Smartphone,
+      img: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    },
+    {
       name: t("Frontend Developer"),
-      role: t("UI/UX & React Specialist"),
+      role: t("UI/UX Implementation & React Specialist"),
       icon: Code2,
-      img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      img: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
     },
     {
       name: t("Backend Engineer"),
-      role: t("APIs & Database Architect"),
+      role: t("APIs, Databases & System Architecture"),
       icon: Database,
-      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    },
+    {
+      name: t("Full Stack Developer"),
+      role: t("End-to-End Web Application Development"),
+      icon: Globe,
+      img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
     },
     {
       name: t("Mobile Developer"),
-      role: t("iOS & Android Expert"),
+      role: t("iOS & Android App Development"),
       icon: Smartphone,
-      img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+    },
+    {
+      name: t("QA Engineer"),
+      role: t("Testing, Bug Tracking & Quality Assurance"),
+      icon: Shield,
+      img: "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
     },
     {
       name: t("DevOps Engineer"),
-      role: t("Cloud & Deployment Specialist"),
+      role: t("CI/CD, Cloud Infrastructure & Deployment"),
       icon: Globe,
-      img: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0",
+      img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
     },
   ];
 
@@ -82,7 +106,7 @@ export default function OurTeam() {
           viewport={{ once: true }}
           className={`text-center ${isArabic ? "text-right" : ""}`}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-sm text-purple-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
             <Users size={16} />
             {t("Our Team")}
           </span>
@@ -97,7 +121,7 @@ export default function OurTeam() {
         </motion.div>
 
         {/* TEAM GRID */}
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
           {team.map((member, index) => (
             <motion.div
               key={member.name}
@@ -117,7 +141,7 @@ export default function OurTeam() {
               </div>
 
               <div className="flex items-center gap-2">
-                <member.icon className="text-purple-400" size={18} />
+                <member.icon className="text-cyan-400" size={18} />
                 <h3 className="font-semibold">{member.name}</h3>
               </div>
 
@@ -137,7 +161,7 @@ export default function OurTeam() {
               transition={{ delay: index * 0.2 }}
               className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-md"
             >
-              <stat.icon className="mx-auto mb-3 text-purple-400" size={28} />
+              <stat.icon className="mx-auto mb-3 text-cyan-400" size={28} />
               <div className="text-3xl font-bold">{stat.value}</div>
               <div className="mt-1 text-gray-400">{stat.label}</div>
             </motion.div>

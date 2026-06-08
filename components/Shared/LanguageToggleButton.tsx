@@ -39,6 +39,7 @@ export default function LanguageToggleButton({ className }: Props) {
       onClick={toggleLanguage}
       disabled={loading}
       className={`
+        cursor-pointer
         group relative flex items-center gap-2 rounded-full
         border border-white/10 bg-white/5 px-3 py-2
         text-sm text-gray-200 backdrop-blur-md
@@ -52,21 +53,25 @@ export default function LanguageToggleButton({ className }: Props) {
       {/* Icon */}
       <span className="relative flex items-center justify-center">
         {loading ? (
-          <Loader2 className="h-4 w-4 animate-spin text-blue-400" />
+          <Loader2 className="h-4 w-4 animate-spin text-cyan-400" />
         ) : (
-          <Globe className="h-4 w-4 text-blue-400 transition-transform group-hover:rotate-12" />
+          <Globe
+            className={`h-4 w-4 transition-transform group-hover:rotate-12 ${
+              isArabic ? "text-gray-400" : "text-cyan-400"
+            }`}
+          />
         )}
       </span>
 
       {/* Label */}
       <span className="font-medium tracking-wide">
-        {isArabic ? "AR" : "EN"}
+        {isArabic ? "EN" : "AR"}
       </span>
 
       {/* Active Indicator Dot */}
       <span
         className={`ml-1 h-2 w-2 rounded-full transition-all ${
-          isArabic ? "bg-green-400" : "bg-blue-400"
+          isArabic ? "bg-gray-400" : "bg-cyan-400"
         }`}
       />
     </button>

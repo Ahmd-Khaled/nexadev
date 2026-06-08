@@ -89,7 +89,7 @@ export default function Services() {
           viewport={{ once: true }}
           className="mx-auto max-w-4xl text-center"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-cyan-300">
             <Sparkles size={16} />
             {t("Our Services")}
           </div>
@@ -132,7 +132,7 @@ export default function Services() {
 
               <div className="relative z-10">
                 {/* Icon */}
-                <div className="mb-6 inline-flex rounded-2xl bg-blue-500/10 p-4 text-blue-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-500/20">
+                <div className="mb-6 inline-flex rounded-2xl bg-blue-500/10 p-4 text-cyan-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-500/20">
                   <service.icon size={32} />
                 </div>
 
@@ -144,7 +144,7 @@ export default function Services() {
 
                 <motion.div
                   whileHover={{ x: 5 }}
-                  className="mt-8 flex items-center gap-2 text-blue-400"
+                  className="mt-8 flex items-center gap-2 text-cyan-400"
                 >
                   <span>{t("Learn More")}</span>
                   <ArrowUpRight size={18} />
@@ -170,7 +170,7 @@ export default function Services() {
             {t("Custom Solution Description")}
           </p>
 
-          <button className="mt-8 rounded-2xl bg-blue-600 px-8 py-4 font-medium transition hover:bg-blue-700">
+          <button className="mt-8 rounded-2xl bg-cyan-600 px-8 py-4 font-medium transition hover:bg-cyan-700">
             {t("Lets Talk")}
           </button>
         </motion.div>

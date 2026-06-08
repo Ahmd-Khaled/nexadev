@@ -11,8 +11,7 @@ import Services from "@/components/Home/Services";
 
 export default function HomePage() {
   return (
-    <div>
-      {/* <Hero /> */}
+    <main className="">
       <Hero2 />
       <Services />
       <AboutUs />
@@ -22,6 +21,6 @@ export default function HomePage() {
       <PricingPlans />
       <CTASection />
       <ContactUs />
-    </div>
+    </main>
   );
 }
