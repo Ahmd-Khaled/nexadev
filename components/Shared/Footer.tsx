@@ -16,6 +16,7 @@ import {
   Phone,
   PhoneCall,
 } from "lucide-react";
+import MobileCall from "./MobileCall";
 
 export default function Footer() {
   const t = useTranslations("HomePage");
@@ -220,16 +221,7 @@ export default function Footer() {
 
               {/* Phone row with animation */}
               <div className="mt-3 flex items-center gap-3 text-white">
-                <div className="relative flex items-center justify-center">
-                  {/* Ripple effect */}
-                  <span className="absolute inline-flex h-8 w-8 animate-ping rounded-full bg-cyan-400/40" />
-
-                  {/* Call icon */}
-                  <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-cyan-500 text-white shadow-lg animate-bounce group-hover:animate-none">
-                    <PhoneCall className="h-4 w-4" />
-                  </div>
-                </div>
-
+                <MobileCall />
                 <a
                   href="tel:+201000000000"
                   className="font-medium text-gray-200 transition-colors hover:text-cyan-400"

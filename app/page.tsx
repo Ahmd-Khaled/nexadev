@@ -8,10 +8,11 @@ import OurProjects from "@/components/Home/OurProjects";
 import OurTeam from "@/components/Home/ourTeam";
 import PricingPlans from "@/components/Home/PricingPlans";
 import Services from "@/components/Home/Services";
+import WhatsAppCall from "@/components/Shared/WhatsAppCall";
 
 export default function HomePage() {
   return (
-    <main className="">
+    <main className="relative">
       <Hero2 />
       <Services />
       <AboutUs />
@@ -21,6 +22,9 @@ export default function HomePage() {
       <PricingPlans />
       <CTASection />
       <ContactUs />
+      <div className="fixed bottom-4 inset-e-6 z-50">
+        <WhatsAppCall />
+      </div>
     </main>
   );
 }

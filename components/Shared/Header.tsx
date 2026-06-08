@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Menu, X, Code2, PhoneCall } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageToggleButton from "./LanguageToggleButton";
+import MobileCall from "./MobileCall";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Header() {
       className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/60 backdrop-blur-md"
       dir={isArabic ? "rtl" : "ltr"}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-white">
           <Code2 className="h-6 w-6 text-cyan-400" />
@@ -53,7 +54,7 @@ export default function Header() {
         </nav>
 
         {/* Right Actions (Desktop) */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-5 md:flex">
           <LanguageToggleButton />
 
           {/* Call Icon */}
@@ -116,15 +117,7 @@ export default function Header() {
 
               <div className="flex items-center gap-3">
                 {/* Mobile Call Icon */}
-                <a
-                  href="tel:+201000000000"
-                  className="relative flex h-10 w-10 items-center justify-center"
-                >
-                  <span className="absolute inline-flex h-10 w-10 animate-ping rounded-full bg-cyan-400/40" />
-                  <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-white animate-bounce">
-                    <PhoneCall className="h-4 w-4" />
-                  </div>
-                </a>
+                <MobileCall />
               </div>
             </div>
           </div>
