@@ -161,7 +161,7 @@ export default function Hero2() {
             className="absolute -left-6 top-10 z-20 rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl"
           >
             <p className="text-sm text-gray-400">{t("Clients")}</p>
-            <h4 className="text-xl font-bold text-white">120+</h4>
+            <h4 className="text-xl font-bold text-white">50+</h4>
           </motion.div>
 
           <motion.div
@@ -170,7 +170,7 @@ export default function Hero2() {
             className="absolute bottom-6 right-0 z-20 rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl"
           >
             <p className="text-sm text-gray-400">{t("Projects")}</p>
-            <h4 className="text-xl font-bold text-white">100+</h4>
+            <h4 className="text-xl font-bold text-white">120+</h4>
           </motion.div>
 
           {/* Dashboard Image */}
