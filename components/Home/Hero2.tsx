@@ -30,7 +30,7 @@ export default function Hero2() {
   ];
 
   return (
-    <section className="relative pt-10 overflow-hidden bg-black text-white">
+    <section className="relative pt-16 md:pt-8 pb-10 md:pb-0 overflow-hidden bg-black text-white">
       {/* ================= BACKGROUND GLOW ================= */}
       <div className="absolute inset-0">
         <motion.div
@@ -156,7 +156,7 @@ export default function Hero2() {
           <motion.div
             animate={{ y: [0, -15, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
-            className="absolute -left-6 top-10 z-20 rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl"
+            className="absolute -left-4 top-10 z-20 rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl"
           >
             <p className="text-sm text-gray-400">{t("Clients")}</p>
             <h4 className="text-xl font-bold text-white">50+</h4>
@@ -165,7 +165,7 @@ export default function Hero2() {
           <motion.div
             animate={{ y: [0, 15, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
-            className="absolute bottom-6 right-0 z-20 rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl"
+            className="absolute -bottom-6 right-0 z-20 rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl"
           >
             <p className="text-sm text-gray-400">{t("Projects")}</p>
             <h4 className="text-xl font-bold text-white">120+</h4>
@@ -174,7 +174,7 @@ export default function Hero2() {
           {/* Dashboard Image */}
           <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
             <Image
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+              src="/images/hero.png"
               alt="Dashboard"
               width={800}
               height={600}
