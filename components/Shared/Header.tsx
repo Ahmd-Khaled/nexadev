@@ -17,10 +17,11 @@ export default function Header() {
 
   const navItems = [
     { label: t("home"), href: "/" },
-    { label: t("services"), href: "/services" },
-    { label: t("projects"), href: "/projects" },
-    { label: t("about"), href: "/about" },
-    { label: t("contact"), href: "/contact" },
+    { label: t("services"), href: "#services" },
+    { label: t("projects"), href: "#projects" },
+    { label: t("plans"), href: "#plans" },
+    { label: t("about"), href: "#about" },
+    { label: t("contact"), href: "#contact" },
   ];
 
   return (
@@ -55,7 +56,7 @@ export default function Header() {
           <LanguageToggleButton />
 
           <Link
-            href="/contact"
+            href="#contact"
             className="rounded-xl bg-white px-4 py-2 text-sm font-medium text-black transition hover:bg-gray-200"
           >
             {t("getQuote")}
@@ -91,7 +92,7 @@ export default function Header() {
               <LanguageToggleButton />
 
               <Link
-                href="/contact"
+                href="#contact"
                 onClick={() => setOpen(false)}
                 className="rounded-xl bg-white px-4 py-2 text-sm font-medium text-black"
               >

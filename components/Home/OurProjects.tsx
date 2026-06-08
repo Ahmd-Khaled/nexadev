@@ -88,7 +88,7 @@ export default function OurProjects() {
   };
 
   return (
-    <section className="relative bg-black py-24 text-white">
+    <section id="projects" className="relative bg-black py-24 text-white">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-purple-600/10 blur-3xl" />

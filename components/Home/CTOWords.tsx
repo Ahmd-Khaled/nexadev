@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { Quote, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export default function CTOWords() {
   const locale = useLocale();
@@ -49,7 +50,17 @@ export default function CTOWords() {
             </p>
 
             <div className="mt-8 flex items-center justify-center gap-4">
-              <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-500 to-blue-500" />
+              {/* <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-500 to-blue-500" /> */}
+
+              <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-500 to-blue-500">
+                <Image
+                  src="/images/cto1.png"
+                  alt="CTO"
+                  width={64}
+                  height={64}
+                  className="rounded-full object-cover"
+                />
+              </div>
 
               <div className="text-left">
                 <h4 className="font-semibold">{t("CTO Name")}</h4>
