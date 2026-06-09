@@ -42,7 +42,7 @@
     "Team Description": "فريق شغوف من المهندسين والمصممين والمطورين لبناء حلول برمجية حديثة وقابلة للتوسع.",
     "Frontend Developer": "مطور واجهات أمامية",
     "UI/UX & React Specialist": "متخصص React و تصميم واجهات",
-    "Backend Engineer": "مطور خلفي",
+    "Backend Engineer": "مطور الواجهة الخلفية",
     "APIs & Database Architect": "معماري قواعد البيانات و APIs",
     "Mobile Developer": "مطور تطبيقات موبايل",
     "iOS & Android Expert": "خبير iOS و Android",
@@ -238,9 +238,7 @@
     "Personal branding for freelancers": "علامة شخصية للمستقلين",
     "Agency Portfolio": "بورتفوليو وكالة",
     "Creative agency case studies and work": "عرض دراسات وأعمال وكالة إبداعية",
-    "Frontend Developer": "مطور واجهات أمامية",
     "UI/UX Implementation & React Specialist": "تنفيذ واجهات المستخدم ومتخصص React",
-    "Backend Engineer": "مهندس خلفية",
     "APIs, Databases & System Architecture": "واجهات برمجية وقواعد بيانات وتصميم الأنظمة",
     "Full Stack Developer": "مطور Full Stack",
     "End-to-End Web Application Development": "تطوير تطبيقات ويب من البداية إلى النهاية",
@@ -250,10 +248,9 @@
     "Agile Delivery, Planning & Team Coordination": "إدارة تنفيذ المشاريع والتخطيط والتنسيق",
     "QA Engineer": "مهندس ضمان الجودة",
     "Testing, Bug Tracking & Quality Assurance": "اختبار البرمجيات وتتبع الأخطاء وضمان الجودة",
-    "DevOps Engineer": "مهندس DevOps",
     "CI/CD, Cloud Infrastructure & Deployment": "النشر السحابي وإدارة البنية التحتية",
-    "Mobile Developer": "مطور تطبيقات موبايل",
     "iOS & Android App Development": "تطوير تطبيقات iOS وAndroid",
-    "Ecommerce": "متجر إلكتروني"
+    "Ecommerce": "متجر إلكتروني",
+    "loading": "جاري التحميل..."
   }
 }

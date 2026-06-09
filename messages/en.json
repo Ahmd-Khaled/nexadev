@@ -239,9 +239,7 @@
     "Personal branding for freelancers": "Personal branding for freelancers",
     "Agency Portfolio": "Agency Portfolio",
     "Creative agency case studies and work": "Creative agency case studies and work",
-    "Frontend Developer": "Frontend Developer",
     "UI/UX Implementation & React Specialist": "UI/UX Implementation & React Specialist",
-    "Backend Engineer": "Backend Engineer",
     "APIs, Databases & System Architecture": "APIs, Databases & System Architecture",
     "Full Stack Developer": "Full Stack Developer",
     "End-to-End Web Application Development": "End-to-End Web Application Development",
@@ -251,10 +249,9 @@
     "Agile Delivery, Planning & Team Coordination": "Agile Delivery, Planning & Team Coordination",
     "QA Engineer": "QA Engineer",
     "Testing, Bug Tracking & Quality Assurance": "Testing, Bug Tracking & Quality Assurance",
-    "DevOps Engineer": "DevOps Engineer",
     "CI/CD, Cloud Infrastructure & Deployment": "CI/CD, Cloud Infrastructure & Deployment",
-    "Mobile Developer": "Mobile Developer",
     "iOS & Android App Development": "iOS & Android App Development",
-    "Ecommerce": "E-commerce"
+    "Ecommerce": "E-commerce",
+    "loading": "Loading Preview..."
   }
 }

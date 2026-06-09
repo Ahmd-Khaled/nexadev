@@ -20,55 +20,62 @@ export default function OurTeam() {
 
   const team = [
     {
-      name: t("Project Manager"),
+      name: "Adnan Ibrahim",
+      title: t("Project Manager"),
       role: t("Agile Delivery, Planning & Team Coordination"),
       icon: Users,
-      img: "https://images.unsplash.com/photo-1552581234-26160f608093",
+      img: "/images/team/manager.jpg",
     },
     {
-      name: t("UI/UX Designer"),
+      name: "Sadek Zedan",
+      title: t("UI/UX Designer"),
       role: t("User Experience & Interface Design Specialist"),
       icon: Smartphone,
-      img: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+      img: "/images/team/sadek.png",
     },
     {
-      name: t("Frontend Developer"),
+      name: "Ahmed Khaled",
+      title: t("Frontend Developer"),
       role: t("UI/UX Implementation & React Specialist"),
       icon: Code2,
-      img: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+      img: "/images/team/ahmedkh.png",
     },
     {
-      name: t("Backend Engineer"),
+      name: "Mohamed Ali",
+      title: t("Backend Engineer"),
       role: t("APIs, Databases & System Architecture"),
       icon: Database,
-      img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+      img: "/images/team/avatar.jpeg",
     },
     {
-      name: t("Full Stack Developer"),
+      name: "Ahmed AbdAllah",
+      title: t("Full Stack Developer"),
       role: t("End-to-End Web Application Development"),
       icon: Globe,
-      img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      img: "/images/team/fullstack.webp",
     },
     {
-      name: t("Mobile Developer"),
+      name: "Mariam Adel",
+      title: t("Mobile Developer"),
       role: t("iOS & Android App Development"),
       icon: Smartphone,
-      img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+      img: "/images/team/av2.jpg",
     },
     {
-      name: t("QA Engineer"),
+      name: "Esraa Hesham",
+      title: t("QA Engineer"),
       role: t("Testing, Bug Tracking & Quality Assurance"),
       icon: Shield,
-      img: "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
+      img: "/images/team/icon-woman.webp",
     },
     {
-      name: t("DevOps Engineer"),
+      name: "Khaled Mostafa",
+      title: t("DevOps Engineer"),
       role: t("CI/CD, Cloud Infrastructure & Deployment"),
       icon: Globe,
-      img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+      img: "/images/team/dev.jpg",
     },
   ];
-
   const stats = [
     {
       icon: Users,
@@ -133,19 +140,25 @@ export default function OurTeam() {
             >
               <div className="relative mb-4 h-52 overflow-hidden rounded-xl">
                 <Image
-                  src={member.img}
+                  src={member.img || "/images/tema/default.png"}
                   alt={member.name}
                   fill
-                  className="object-cover transition duration-500 group-hover:scale-110"
+                  className="object-contain bg-gray-50 transition duration-500  group-hover:scale-110"
                 />
               </div>
 
               <div className="flex items-center gap-2">
                 <member.icon className="text-cyan-400" size={18} />
-                <h3 className="font-semibold">{member.name}</h3>
+                <span className="text-xs font-medium uppercase tracking-wider text-cyan-400">
+                  {member.title}
+                </span>
               </div>
 
-              <p className="mt-1 text-sm text-gray-400">{member.role}</p>
+              <h3 className="mt-3 text-lg font-bold text-white">
+                {member.name}
+              </h3>
+
+              <p className="mt-2 text-sm text-gray-400">{member.role}</p>
             </motion.div>
           ))}
         </div>
