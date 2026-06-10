@@ -22,11 +22,12 @@ export const projectsList: Record<Category, any[]> = {
   ],
   apps: [
     {
-      title: "Food Delivery App",
-      titleAr: "تطبيق التوصيل الطعام",
-      desc: "Mobile app for restaurants and delivery tracking",
-      descAr: "تطبيق للمطاعم وتتبع التوصيل",
-      img: "https://images.unsplash.com/photo-1523473827536-2a64d0d367a7",
+      title: "Shobyk App",
+      titleAr: "شوبيك",
+      desc: "Service booking platform connecting users with trusted professionals and easy appointment scheduling.",
+      descAr: "منصة لحجز الخدمات تربط المستخدمين بمقدمي خدمات موثوقين وتتيح حجز المواعيد بسهولة.",
+      img: "/images/projects/shobyk-app.png",
+      url: "https://play.google.com/store/apps/details?id=com.shobykmobileapp"
     },
     // {
     //   title: "",

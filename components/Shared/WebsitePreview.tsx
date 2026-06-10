@@ -159,10 +159,10 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
       </div>
 
       {/* Top Gradient */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-black/90 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-6 bg-gradient-to-b from-black/90 to-transparent" />
 
       {/* Bottom Gradient */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-black/90 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-black/90 to-transparent" />
     </div>
   );
 }
