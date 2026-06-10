@@ -69,7 +69,7 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setMinimumDelayPassed(true);
-    }, 1000);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
@@ -80,7 +80,7 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
     }
 
     return () => stopAutoScroll();
-  }, [showLoader]);
+  }, [showLoader, startAutoScroll]);
 
   const pause = () => {
     pausedRef.current = true;
@@ -96,7 +96,7 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
 
   return (
     <div
-      className="group relative h-[400px] overflow-hidden rounded-2xl bg-black shadow-2xl"
+      className="group relative h-100 overflow-hidden rounded-2xl bg-black shadow-2xl"
       onMouseEnter={() => {
         if (!isTouchDevice) pause();
       }}
@@ -143,7 +143,7 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
       <div
         ref={containerRef}
         className="h-full overflow-y-auto scroll-smooth touch-pan-y"
-        style={{ WebkitOverflowScrolling: "touch" }}
+        // style={{ WebkitOverflowScrolling: "touch" }}
       >
         <Image
           src={src}
@@ -159,10 +159,10 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
       </div>
 
       {/* Top Gradient */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-6 bg-gradient-to-b from-black/90 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-6 bg-linear-to-b from-black/90 to-transparent" />
 
       {/* Bottom Gradient */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-black/90 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-linear-to-t from-black/90 to-transparent" />
     </div>
   );
 }
