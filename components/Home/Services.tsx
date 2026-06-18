@@ -170,7 +170,7 @@ export default function Services() {
             {t("Custom Solution Description")}
           </p>
 
-          <button className="mt-8 rounded-2xl bg-amber-600 px-8 py-4 font-medium transition hover:bg-amber-700">
+          <button className="mt-8 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 px-8 py-4 font-medium transition hover:bg-amber-700">
             {t("Lets Talk")}
           </button>
         </motion.div>
