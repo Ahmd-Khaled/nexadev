@@ -103,7 +103,7 @@ export default function PricingPlans() {
           viewport={{ once: true }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-2 text-sm text-amber-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-500/10 px-4 py-2 text-sm text-amber-300">
             <Sparkles size={16} />
             {t("Pricing Plans")}
           </span>
@@ -153,7 +153,7 @@ export default function PricingPlans() {
                 ))}
               </ul>
 
-              <button className="mt-8 w-full rounded-xl bg-amber-600 py-3 font-medium transition hover:bg-amber-700">
+              <button className="mt-8 w-full rounded-xl bg-amber-500 py-3 font-medium transition hover:bg-yellow-600 cursor-pointer">
                 {t("Get Started")}
               </button>
             </motion.div>
@@ -218,7 +218,7 @@ export default function PricingPlans() {
             {t("Enterprise Description")}
           </p>
 
-          <button className="mt-8 rounded-xl bg-amber-600 px-8 py-3 font-medium transition hover:bg-amber-700">
+          <button className="mt-8 rounded-xl bg-amber-500 px-8 py-3 font-medium transition hover:bg-yellow-600 cursor-pointer">
             {t("Contact Sales")}
           </button>
         </motion.div>

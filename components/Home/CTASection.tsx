@@ -68,7 +68,7 @@ export default function CTASection() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="#contact-form"
-              className="group flex items-center gap-2 rounded-2xl bg-amber-600 px-8 py-4 font-medium transition-all duration-300 hover:bg-amber-700 hover:scale-105"
+              className="group flex items-center gap-2 rounded-2xl bg-amber-500 px-8 py-4 font-medium transition-all duration-300 hover:bg-yellow-600 cursor-pointer hover:scale-105"
             >
               {t("Contact Us")}
               <ArrowRight
@@ -94,12 +94,12 @@ export default function CTASection() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-amber-400">50+</h3>
+              <h3 className="text-3xl font-bold text-amber-500">50+</h3>
               <p className="mt-2 text-gray-400">{t("Happy Clients")}</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-amber-400">24/7</h3>
+              <h3 className="text-3xl font-bold text-yellow-500">24/7</h3>
               <p className="mt-2 text-gray-400">{t("Technical Support")}</p>
             </div>
           </div>

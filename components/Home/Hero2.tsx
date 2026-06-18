@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import {
   Rocket,
   Sparkles,
@@ -15,6 +15,8 @@ import {
 
 export default function Hero2() {
   const t = useTranslations("HomePage");
+  const locale = useLocale();
+  const isAr = locale === "ar";
 
   const services = [
     { icon: Code2, label: t("Web Development") },
@@ -178,7 +180,7 @@ export default function Hero2() {
               alt="Dashboard"
               width={800}
               height={600}
-              className="rounded-[32px] object-cover"
+              className={`rounded-[32px] object-cover ${isAr ? "" : ""}`}
             />
           </div>
         </motion.div>

@@ -229,7 +229,7 @@ export default function ContactUs() {
                 whileTap={{
                   scale: 0.98,
                 }}
-                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-amber-600 py-4 font-medium transition hover:bg-amber-700"
+                className="flex w-full items-center justify-center gap-2 rounded-2xl  px-8 py-4 font-medium transition  cursor-pointer bg-gradient-to-r bg-amber-300 via-yellow-500 to-amber-400 "
               >
                 <Send size={18} />
                 {t("Send Message")}
