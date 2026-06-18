@@ -65,7 +65,7 @@ export default function Services() {
             duration: 15,
             repeat: Infinity,
           }}
-          className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-purple-600/10 blur-3xl"
+          className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-amber-600/10 blur-3xl"
         />
 
         <motion.div
@@ -77,7 +77,7 @@ export default function Services() {
             duration: 18,
             repeat: Infinity,
           }}
-          className="absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-3xl"
+          className="absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-amber-600/10 blur-3xl"
         />
       </div>
 
@@ -89,7 +89,7 @@ export default function Services() {
           viewport={{ once: true }}
           className="mx-auto max-w-4xl text-center"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-cyan-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-2 text-sm text-amber-300">
             <Sparkles size={16} />
             {t("Our Services")}
           </div>
@@ -127,12 +127,12 @@ export default function Services() {
             >
               {/* Glow Effect */}
               <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent" />
               </div>
 
               <div className="relative z-10">
                 {/* Icon */}
-                <div className="mb-6 inline-flex rounded-2xl bg-blue-500/10 p-4 text-cyan-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-500/20">
+                <div className="mb-6 inline-flex rounded-2xl bg-amber-500/10 p-4 text-amber-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-amber-500/20">
                   <service.icon size={32} />
                 </div>
 
@@ -144,7 +144,7 @@ export default function Services() {
 
                 <motion.div
                   whileHover={{ x: 5 }}
-                  className="mt-8 flex items-center gap-2 text-cyan-400"
+                  className="mt-8 flex items-center gap-2 text-amber-400"
                 >
                   <span>{t("Learn More")}</span>
                   <ArrowUpRight size={18} />
@@ -162,7 +162,7 @@ export default function Services() {
             y: 0,
           }}
           viewport={{ once: true }}
-          className="mt-20 rounded-[40px] border border-white/10 bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-10 text-center backdrop-blur-xl"
+          className="mt-20 rounded-[40px] border border-white/10 bg-gradient-to-r from-amber-500/10 to-amber-500/10 p-10 text-center backdrop-blur-xl"
         >
           <h3 className="text-3xl font-bold">{t("Need A Custom Solution")}</h3>
 
@@ -170,7 +170,7 @@ export default function Services() {
             {t("Custom Solution Description")}
           </p>
 
-          <button className="mt-8 rounded-2xl bg-cyan-600 px-8 py-4 font-medium transition hover:bg-cyan-700">
+          <button className="mt-8 rounded-2xl bg-amber-600 px-8 py-4 font-medium transition hover:bg-amber-700">
             {t("Lets Talk")}
           </button>
         </motion.div>

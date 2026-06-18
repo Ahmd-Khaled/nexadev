@@ -44,7 +44,7 @@ export default function ProjectCard({
             <div className="h-3 w-3 rounded-full bg-green-500" />
           </div>
 
-          <h3 className="rounded-full bg-cyan-500/10 px-2 py-1 text-sm font-semibold capitalize text-cyan-400">
+          <h3 className="rounded-full bg-amber-500/10 px-2 py-1 text-sm font-semibold capitalize text-amber-400">
             {activeCategory}
           </h3>
         </div>
@@ -68,7 +68,7 @@ export default function ProjectCard({
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 8 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(6,182,212,0.35)]"
+                className="flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400 transition-all duration-300 hover:border-amber-400 hover:bg-amber-500/20 hover:shadow-[0_0_25px_rgba(6,182,212,0.35)]"
               >
                 {isAr ? <ArrowUpLeft size={20} /> : <ArrowUpRight size={20} />}
               </motion.div>

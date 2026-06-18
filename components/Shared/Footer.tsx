@@ -50,7 +50,7 @@ export default function Footer() {
             duration: 15,
             repeat: Infinity,
           }}
-          className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-cyan-600/10 blur-3xl"
+          className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-amber-600/10 blur-3xl"
         />
 
         <motion.div
@@ -62,12 +62,12 @@ export default function Footer() {
             duration: 18,
             repeat: Infinity,
           }}
-          className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-cyan-600/10 blur-3xl"
+          className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-amber-600/10 blur-3xl"
         />
       </div>
 
       {/* Top Gradient Line */}
-      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
 
       <div className="container relative z-10 mx-auto px-6">
         {/* Hero Footer */}
@@ -77,7 +77,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="py-20 text-center"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-2 text-sm text-amber-300">
             <Sparkles size={16} />
             {t("Building Digital Excellence")}
           </div>
@@ -115,7 +115,7 @@ export default function Footer() {
               whileHover={{ y: -5 }}
               className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl"
             >
-              <item.icon className="mb-4 text-blue-400" size={28} />
+              <item.icon className="mb-4 text-amber-400" size={28} />
 
               <h3 className="text-3xl font-bold">{item.value}</h3>
 
@@ -136,11 +136,11 @@ export default function Footer() {
                   repeat: Infinity,
                 }}
               >
-                <Code2 className="h-8 w-8 text-cyan-400" />
+                <Code2 className="h-8 w-8 text-amber-400" />
               </motion.div>
 
               <span className="text-2xl font-bold">
-                Nexa<span className="text-cyan-400">Dev</span>
+                Nexa<span className="text-amber-400">Dev</span>
               </span>
             </Link>
 
@@ -158,7 +158,7 @@ export default function Footer() {
                       y: -4,
                     }}
                     href="#"
-                    className="rounded-2xl border border-white/10 bg-white/5 p-3 text-gray-400 transition hover:border-cyan-500 hover:text-white"
+                    className="rounded-2xl border border-white/10 bg-white/5 p-3 text-gray-400 transition hover:border-amber-500 hover:text-white"
                   >
                     <Icon size={18} />
                   </motion.a>
@@ -176,11 +176,11 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="group flex items-center gap-2 text-gray-400 transition hover:text-cyan-400"
+                    className="group flex items-center gap-2 text-gray-400 transition hover:text-amber-400"
                   >
                     <ArrowUpRight
                       size={14}
-                      className="opacity-0 transition group-hover:opacity-100 group-hover:text-cyan-400"
+                      className="opacity-0 transition group-hover:opacity-100 group-hover:text-amber-400"
                     />
                     {link.name}
                   </Link>
@@ -197,7 +197,7 @@ export default function Footer() {
               {services.map((service) => (
                 <li
                   key={service}
-                  className="transition hover:text-cyan-400 cursor-pointer"
+                  className="transition hover:text-amber-400 cursor-pointer"
                 >
                   {service}
                 </li>
@@ -208,10 +208,10 @@ export default function Footer() {
           {/* Contact Card */}
           {/* Contact Card */}
           <div>
-            <div className="group relative overflow-hidden rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:border-cyan-400/40">
+            <div className="group relative overflow-hidden rounded-3xl border border-amber-500/20 bg-gradient-to-br from-amber-500/10 to-amber-500/10 p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:border-amber-400/40">
               {/* Animated glow background */}
-              <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-cyan-500/20 blur-3xl animate-pulse" />
-              <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl animate-pulse" />
+              <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-amber-500/20 blur-3xl animate-pulse" />
+              <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-amber-500/20 blur-3xl animate-pulse" />
 
               <h3 className="font-semibold text-white">
                 {t("Available For New Projects")}
@@ -224,15 +224,15 @@ export default function Footer() {
                 <MobileCall />
                 <a
                   href="tel:+201000000000"
-                  className="font-medium text-gray-200 transition-colors hover:text-cyan-400"
+                  className="font-medium text-gray-200 transition-colors hover:text-amber-400"
                 >
                   +20 100 000 0000
                 </a>
               </div>
 
               {/* Availability status */}
-              <div className="mt-6 inline-flex items-center gap-2 text-cyan-400">
-                <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
+              <div className="mt-6 inline-flex items-center gap-2 text-amber-400">
+                <span className="h-2 w-2 rounded-full bg-amber-400 animate-pulse" />
                 {t("Available Now")}
               </div>
             </div>

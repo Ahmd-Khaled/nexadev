@@ -101,8 +101,8 @@ export default function OurTeam() {
     >
       {/* Background Glow */}
       <div className="absolute inset-0">
-        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-purple-600/10 blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
+        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-amber-600/10 blur-3xl" />
+        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-amber-600/10 blur-3xl" />
       </div>
 
       <div className="container relative z-10 mx-auto px-6">
@@ -113,7 +113,7 @@ export default function OurTeam() {
           viewport={{ once: true }}
           className={`text-center ${isArabic ? "text-right" : ""}`}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm text-amber-300">
             <Users size={16} />
             {t("Our Team")}
           </span>
@@ -166,8 +166,8 @@ export default function OurTeam() {
               </div>
 
               <div className="flex items-center gap-2">
-                <member.icon className="text-cyan-400" size={18} />
-                <span className="text-xs font-medium uppercase tracking-wider text-cyan-400">
+                <member.icon className="text-amber-400" size={18} />
+                <span className="text-xs font-medium uppercase tracking-wider text-amber-400">
                   {member.title}
                 </span>
               </div>
@@ -192,7 +192,7 @@ export default function OurTeam() {
               transition={{ delay: index * 0.2 }}
               className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-md"
             >
-              <stat.icon className="mx-auto mb-3 text-cyan-400" size={28} />
+              <stat.icon className="mx-auto mb-3 text-amber-400" size={28} />
               <div className="text-3xl font-bold">{stat.value}</div>
               <div className="mt-1 text-gray-400">{stat.label}</div>
             </motion.div>

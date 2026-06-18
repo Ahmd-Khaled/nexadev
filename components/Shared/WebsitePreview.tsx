@@ -112,7 +112,7 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
       {showLoader && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-black">
           <div className="flex flex-col items-center gap-3">
-            <LoaderCircle size={38} className="animate-spin text-cyan-400" />
+            <LoaderCircle size={38} className="animate-spin text-amber-400" />
             <span className="text-sm text-gray-400">{t("loading")}</span>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
             onClick={() => scrollBy(-160)}
             className="flex h-11 w-11 items-center justify-center transition hover:bg-white/20"
           >
-            <ChevronUp className="text-cyan-300" size={18} />
+            <ChevronUp className="text-amber-300" size={18} />
           </button>
 
           <div className="h-px bg-white/10" />
@@ -134,7 +134,7 @@ export default function WebsitePreview({ src, alt }: WebsitePreviewProps) {
             onClick={() => scrollBy(160)}
             className="flex h-11 w-11 items-center justify-center transition hover:bg-white/20"
           >
-            <ChevronDown className="text-cyan-300" size={18} />
+            <ChevronDown className="text-amber-300" size={18} />
           </button>
         </div>
       </div>

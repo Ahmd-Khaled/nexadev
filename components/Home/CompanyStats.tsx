@@ -27,7 +27,9 @@ export default function CompanyStats() {
               key={i}
               className="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800"
             >
-              <h3 className="text-3xl font-bold text-blue-600">{stat.value}</h3>
+              <h3 className="text-3xl font-bold text-amber-600">
+                {stat.value}
+              </h3>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
                 {stat.label}
               </p>

@@ -33,10 +33,10 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-white">
-          <Code2 className="h-6 w-6 text-cyan-400" />
+          <Code2 className="h-6 w-6 text-amber-400" />
           <span className="text-lg font-bold">
             Nexa
-            <span className="text-cyan-400">Dev</span>
+            <span className="text-amber-400">Dev</span>
           </span>
         </Link>
 
@@ -63,10 +63,10 @@ export default function Header() {
             className="relative flex h-10 w-10 items-center justify-center group"
           >
             {/* Ping */}
-            <span className="absolute inline-flex h-10 w-10 animate-ping rounded-full bg-cyan-400/40" />
+            <span className="absolute inline-flex h-10 w-10 animate-ping rounded-full bg-amber-400/40" />
 
             {/* Icon */}
-            <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-white shadow-lg transition hover:scale-110 active:scale-95 animate-bounce group-hover:animate-none">
+            <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-amber-500 text-white shadow-lg transition hover:scale-110 active:scale-95 animate-bounce group-hover:animate-none">
               <PhoneCall className="h-4 w-4" />
             </div>
           </a>
@@ -99,7 +99,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-gray-300 hover:text-cyan-400 transition"
+                className="text-sm text-gray-300 hover:text-amber-400 transition"
               >
                 {item.label}
               </Link>

@@ -91,8 +91,8 @@ export default function PricingPlans() {
     >
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-cyan-600/10 blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
+        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-amber-600/10 blur-3xl" />
+        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-amber-600/10 blur-3xl" />
       </div>
 
       <div className="container relative z-10 mx-auto px-6">
@@ -103,7 +103,7 @@ export default function PricingPlans() {
           viewport={{ once: true }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-2 text-sm text-amber-300">
             <Sparkles size={16} />
             {t("Pricing Plans")}
           </span>
@@ -126,17 +126,17 @@ export default function PricingPlans() {
               transition={{ delay: index * 0.15 }}
               className={`relative rounded-3xl border p-8 backdrop-blur-xl ${
                 plan.featured
-                  ? "border-cyan-500 bg-cyan-500/10"
+                  ? "border-amber-500 bg-amber-500/10"
                   : "border-white/10 bg-white/5"
               }`}
             >
               {plan.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-cyan-600 px-4 py-1 text-xs font-semibold">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-600 px-4 py-1 text-xs font-semibold">
                   {t("Most Popular")}
                 </div>
               )}
 
-              <plan.icon className="mb-6 text-cyan-400" size={36} />
+              <plan.icon className="mb-6 text-amber-400" size={36} />
 
               <h3 className="text-2xl font-bold">{plan.name}</h3>
 
@@ -147,13 +147,13 @@ export default function PricingPlans() {
               <ul className="mt-8 space-y-4">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-3">
-                    <Check size={18} className="text-cyan-400" />
+                    <Check size={18} className="text-amber-400" />
                     {feature}
                   </li>
                 ))}
               </ul>
 
-              <button className="mt-8 w-full rounded-xl bg-cyan-600 py-3 font-medium transition hover:bg-cyan-700">
+              <button className="mt-8 w-full rounded-xl bg-amber-600 py-3 font-medium transition hover:bg-amber-700">
                 {t("Get Started")}
               </button>
             </motion.div>
@@ -206,9 +206,9 @@ export default function PricingPlans() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 rounded-3xl border border-white/10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-10 text-center backdrop-blur-xl"
+          className="mt-20 rounded-3xl border border-white/10 bg-gradient-to-r from-amber-500/10 to-amber-500/10 p-10 text-center backdrop-blur-xl"
         >
-          <Building2 size={48} className="mx-auto text-cyan-400" />
+          <Building2 size={48} className="mx-auto text-amber-400" />
 
           <h3 className="mt-6 text-3xl font-bold">
             {t("Custom Enterprise Plan")}
@@ -218,7 +218,7 @@ export default function PricingPlans() {
             {t("Enterprise Description")}
           </p>
 
-          <button className="mt-8 rounded-xl bg-cyan-600 px-8 py-3 font-medium transition hover:bg-cyan-700">
+          <button className="mt-8 rounded-xl bg-amber-600 px-8 py-3 font-medium transition hover:bg-amber-700">
             {t("Contact Sales")}
           </button>
         </motion.div>

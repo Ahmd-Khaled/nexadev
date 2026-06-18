@@ -18,8 +18,8 @@ export default function CTOWords() {
     >
       {/* Background Glow */}
       <div className="absolute inset-0">
-        <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-cyan-600/10 blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
+        <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-amber-600/10 blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-amber-600/10 blur-3xl" />
       </div>
 
       <div className="container relative z-10 mx-auto px-6">
@@ -33,7 +33,7 @@ export default function CTOWords() {
           }`}
         >
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm text-amber-300">
             <Sparkles size={16} />
             {t("CTO Words")}
           </div>
@@ -41,7 +41,7 @@ export default function CTOWords() {
           {/* Quote Card */}
           <div className="relative rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl">
             <Quote
-              className="absolute left-6 top-6 text-cyan-400/40"
+              className="absolute left-6 top-6 text-amber-400/40"
               size={40}
             />
 
@@ -50,9 +50,9 @@ export default function CTOWords() {
             </p>
 
             <div className="mt-8 flex items-center justify-center gap-4">
-              {/* <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-500 to-blue-500" /> */}
+              {/* <div className="h-12 w-12 rounded-full bg-gradient-to-r from-amber-500 to-amber-500" /> */}
 
-              <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-500 to-blue-500">
+              <div className="h-16 w-16 rounded-full bg-gradient-to-r from-amber-500 to-amber-500">
                 <Image
                   src="/images/cto1.png"
                   alt="CTO"

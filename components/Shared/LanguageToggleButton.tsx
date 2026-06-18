@@ -53,11 +53,11 @@ export default function LanguageToggleButton({ className }: Props) {
       {/* Icon */}
       <span className="relative flex items-center justify-center">
         {loading ? (
-          <Loader2 className="h-4 w-4 animate-spin text-cyan-400" />
+          <Loader2 className="h-4 w-4 animate-spin text-amber-400" />
         ) : (
           <Globe
             className={`h-4 w-4 transition-transform group-hover:rotate-12 ${
-              isArabic ? "text-gray-400" : "text-cyan-400"
+              isArabic ? "text-gray-400" : "text-amber-400"
             }`}
           />
         )}
@@ -71,7 +71,7 @@ export default function LanguageToggleButton({ className }: Props) {
       {/* Active Indicator Dot */}
       <span
         className={`ml-1 h-2 w-2 rounded-full transition-all ${
-          isArabic ? "bg-gray-400" : "bg-cyan-400"
+          isArabic ? "bg-gray-400" : "bg-amber-400"
         }`}
       />
     </button>

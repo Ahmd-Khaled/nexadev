@@ -42,13 +42,13 @@ export default function Hero() {
       {/* Background Glow */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-[-100px] left-[-100px] h-[500px] w-[500px] rounded-full bg-purple-600/20 blur-3xl"
+          className="absolute top-[-100px] left-[-100px] h-[500px] w-[500px] rounded-full bg-amber-600/20 blur-3xl"
           animate={{ x: [0, 40, 0], y: [0, 30, 0] }}
           transition={{ duration: 10, repeat: Infinity }}
         />
 
         <motion.div
-          className="absolute bottom-[-120px] right-[-120px] h-[400px] w-[400px] rounded-full bg-blue-500/20 blur-3xl"
+          className="absolute bottom-[-120px] right-[-120px] h-[400px] w-[400px] rounded-full bg-amber-500/20 blur-3xl"
           animate={{ x: [0, -30, 0], y: [0, -40, 0] }}
           transition={{ duration: 12, repeat: Infinity }}
         />
@@ -103,7 +103,7 @@ export default function Hero() {
             >
               <Link
                 href="#services"
-                className="group flex w-full items-center justify-center gap-2 rounded-xl bg-purple-600 px-6 py-3 transition hover:bg-purple-700 sm:w-auto"
+                className="group flex w-full items-center justify-center gap-2 rounded-xl bg-amber-600 px-6 py-3 transition hover:bg-amber-700 sm:w-auto"
               >
                 {t("Get Started")}
 
@@ -131,7 +131,7 @@ export default function Hero() {
                   transition={{ delay: index * 0.2 }}
                   className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-md transition hover:bg-white/10"
                 >
-                  <service.icon className="mb-3 text-purple-400" size={24} />
+                  <service.icon className="mb-3 text-amber-400" size={24} />
 
                   <h3 className="mb-1 font-semibold">{service.title}</h3>
 
@@ -162,7 +162,7 @@ export default function Hero() {
                 transition={{ duration: 4, repeat: Infinity }}
                 className="absolute right-0 top-0 rounded-xl border border-white/10 bg-black/70 p-3 backdrop-blur-md sm:-right-4 sm:-top-4 lg:-right-6 lg:-top-6"
               >
-                <Rocket className="text-blue-400" size={28} />
+                <Rocket className="text-amber-400" size={28} />
               </motion.div>
 
               <motion.div
