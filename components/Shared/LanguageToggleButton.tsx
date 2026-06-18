@@ -65,7 +65,7 @@ export default function LanguageToggleButton({ className }: Props) {
 
       {/* Label */}
       <span className="font-medium tracking-wide">
-        {isArabic ? "EN" : "AR"}
+        {isArabic ? "EN" : "عربي"}
       </span>
 
       {/* Active Indicator Dot */}
