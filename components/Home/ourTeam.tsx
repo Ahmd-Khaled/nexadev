@@ -138,12 +138,30 @@ export default function OurTeam() {
               transition={{ delay: index * 0.15 }}
               className="group rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition hover:bg-white/10"
             >
-              <div className="relative mb-4 h-52 overflow-hidden rounded-xl">
+              {/* <div className="relative mb-4 h-52 overflow-hidden rounded-xl">
                 <Image
                   src={member.img || "/images/tema/default.png"}
                   alt={member.name}
                   fill
                   className="object-contain bg-gray-50 transition duration-500  group-hover:scale-110"
+                />
+              </div> */}
+              <div className="relative mb-4 h-52 overflow-hidden rounded-xl bg-gray-100">
+                <Image
+                  src={member.img || "/images/team/default.png"}
+                  alt={member.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="
+                    object-contain
+                    object-center
+                    transition-transform
+                    duration-500
+                    ease-out
+                    will-change-transform
+                    transform-gpu
+                    group-hover:scale-105
+                  "
                 />
               </div>
 
